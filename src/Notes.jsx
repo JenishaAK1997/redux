@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux'; // Import Redux useDispatch
-import { addNote } from './Notesactions'; // Import your note action
+import { useDispatch } from 'react-redux'; 
+import { addNote } from './Notesactions'; 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,7 +11,7 @@ import Navbar from './Navbar';
 import Noteslist from './Noteslist';
 
 function Notes() {
-  const dispatch = useDispatch(); // Use Redux dispatch
+  const dispatch = useDispatch(); 
   const [notesTitle, settitle] = useState('');
   const [newNotes, setnotes] = useState('');
   const [newDate, setDate] = useState('');
@@ -23,7 +23,7 @@ function Notes() {
         notes: newNotes,
         date: newDate,
       };
-      dispatch(addNote(notesData)); // Dispatch the addNote action
+      dispatch(addNote(notesData));
       setnotes('');
       settitle('');
       setDate('');

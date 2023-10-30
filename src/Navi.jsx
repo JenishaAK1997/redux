@@ -5,7 +5,7 @@ import Task from './Task';
 import Home from './Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux'; // Import Redux Provider
-import store from './store'; // Import your Redux store
+import store from './Store'; // Import your Redux store
 
 function Navi() {
   return (
